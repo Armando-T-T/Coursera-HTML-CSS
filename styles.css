@@ -1,0 +1,142 @@
+body{
+    margin: 3rem 0% 3rem 0%;
+    background-color: black;
+    color:white;
+    font-family: 'Times New Roman', Times,serif;
+}
+
+h1{
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 3vw; 
+}
+
+p {
+    font-size: 1.5vw; 
+}
+
+header > img {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto 2rem;
+}
+
+nav{
+    background-color: whitesmoke;
+    height: auto;
+    align-content: center;
+    margin-bottom: 2vh;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul a{
+    color:black;
+    text-decoration: none;
+    font-size: 2.5vw;
+}
+
+section {
+    display:flex;
+
+}
+
+#section_1{
+    background-image:url("diamonds.webp");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color:black;
+}
+
+#section_1 article{
+    display: flex; 
+    flex: 1; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+#section_2{
+    display: block;
+    margin-top: 2vh;
+}
+
+#section_2 article{
+    display:flex;
+    padding: 0px;
+    max-height: 50vh;
+    font-size: 20%;
+}
+
+#section_2 article div{
+    display: flex; 
+    flex: 1; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+#section_2 article:hover{
+    background-color: white;
+    color: black;
+    animation: color-change 2s ease;
+}
+
+@keyframes color-change {
+    from{
+        background-color: black;
+        color: white;  
+    }
+    to{
+        background-color: white;
+        color: black;
+    }
+}
+
+article div img{
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    flex:1;
+    padding: 1rem;     
+}
+
+footer{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1rem 0;
+}
+
+footer div {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 2rem;
+}
+
+footer .img{
+    background-image:url("Asset 3@3x.png");
+    background-size:contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: black;
+    transition: background-image 2s, background-color 2s;
+}
+
+footer .img:hover{
+    background-image: url("Asset 1@3x.png");
+    background-color: white;
+}
+
